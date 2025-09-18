@@ -3,13 +3,12 @@
 
 #include <stdio.h>
 
-
-int main(void)
-{
-	for (int i = 1;) i <= 100; i++); {
-		printf_s("%d\n", i);
- }
+int main(void) {
+    for (int i = 1; i <= 100; i++)
+        printf("%d\n", i);
+    return 0;
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
