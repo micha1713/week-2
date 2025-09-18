@@ -21,7 +21,7 @@ int main(void) {
     }
     else {
         double r = -b / (2 * a), i = sqrt(-d) / (2 * a);
-        printf("imagionere oplossingen: x1 = %.2f+%.2fi, x2 = %.2f-%.2fi\n", r, i, r, i);
+        printf("Imagionere oplossingen: x1 = %.2f+%.2fi, x2 = %.2f-%.2fi\n", r, i, r, i);
     }
 
     return 0;
