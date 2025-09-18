@@ -1,0 +1,40 @@
+// opdracht 15.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+    double a, b, c;
+    printf("Geef a b c: ");
+    scanf("%lf %lf %lf", &a, &b, &c);
+
+    double d = b * b - 4 * a * c;
+
+    if (d >= 0) {
+        double x1 = (-b + sqrt(d)) / (2 * a);
+        double x2 = (-b - sqrt(d)) / (2 * a);
+        if (d == 0)
+            printf("Dubbele oplossing x = %.2f\n", x1);
+        else
+            printf("Oplossingen x1 = %.2f, x2 = %.2f\n", x1, x2);
+    }
+    else {
+        double r = -b / (2 * a), i = sqrt(-d) / (2 * a);
+        printf("imagionere oplossingen: x1 = %.2f+%.2fi, x2 = %.2f-%.2fi\n", r, i, r, i);
+    }
+
+    return 0;
+}
+
+
+// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
+// Debug program: F5 or Debug > Start Debugging menu
+
+// Tips for Getting Started: 
+//   1. Use the Solution Explorer window to add/manage files
+//   2. Use the Team Explorer window to connect to source control
+//   3. Use the Output window to see build output and other messages
+//   4. Use the Error List window to view errors
+//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
+//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
